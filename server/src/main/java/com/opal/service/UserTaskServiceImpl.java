@@ -1,25 +1,33 @@
 package com.opal.service;
 
-import com.opal.model.Task;
-import com.opal.dataprovider.TaskProvider;
+import com.opal.model.UserTask;
+import com.opal.repository.UserTaskRepository;
+import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 import java.util.concurrent.*;
 
 @Log4j2
 @Service
-public class TaskServiceImpl implements TaskService {
+@AllArgsConstructor
+public class UserTaskServiceImpl implements UserTaskService {
 
     @Autowired
-    private TaskProvider taskProvider;
+    private UserTaskRepository userTaskRepository;
 
     @Override
-    public Task getTask(long id) {
-        Task task = taskProvider.getTask(id);
-        return task;
+    public UserTask getTask(long id) {
+        UserTask userTask = null;
+        Optional<UserTask> userTaskOptional = userTaskRepository.findById(id);
+        if (userTaskOptional.isPresent()) {
+            userTask = userTaskOptional.get();
+        }
+        return userTask;
     }
 
     @Override
@@ -61,7 +69,7 @@ public class TaskServiceImpl implements TaskService {
         futures.stream().forEach(task -> System.out.println(task.isDone()));
 
         try {
-            if(!executor.awaitTermination(800, TimeUnit.MILLISECONDS)) {
+            if (!executor.awaitTermination(800, TimeUnit.MILLISECONDS)) {
                 executor.shutdown();
             }
         } catch (InterruptedException e) {
