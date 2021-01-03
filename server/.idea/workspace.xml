@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="520e8e61-a886-443b-b3c2-08a77d5e72bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/opal/repository/UserTaskRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/opal/controller/UserTaskServiceControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/opal/service/UserTaskServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opal/controller/TaskServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opal/controller/UserTaskServiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opal/dataaccesslayer/h2/model/Task.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opal/dataaccesslayer/h2/repository/TaskRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opal/dataconverter/DataConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opal/dataconverter/TaskConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opal/dataconverter/h2/TaskConverterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opal/dataprovider/TaskProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opal/dataprovider/h2/TaskProviderImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opal/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opal/model/UserTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opal/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opal/service/UserTaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opal/service/TaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opal/service/UserTaskServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/opal/controller/AbstractControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/opal/controller/TaskServiceControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/opal/dataprovider/TaskProviderTestConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/opal/service/TaskServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opal/service/UserTaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opal/service/UserTaskServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/opal/controller/UserTaskServiceControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/opal/controller/UserTaskServiceControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/opal/service/UserTaskServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/opal/service/UserTaskServiceImplTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTaskServiceImplTest.getTask">
+  <component name="RunManager" selected="JUnit.UserTaskServiceControllerTest.getUserTask">
     <configuration name="UserTaskServiceControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kanbanboard" />
       <extension name="coverage">
@@ -118,10 +103,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="dependency:tree" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="dependency:tree" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.UserTaskServiceControllerTest" />
+      <item itemvalue="JUnit.UserTaskServiceControllerTest.getUserTask" />
+      <item itemvalue="JUnit.UserTaskServiceImplTest.getTask" />
+      <item itemvalue="Maven.dependency:tree" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserTaskServiceImplTest.getTask" />
         <item itemvalue="JUnit.UserTaskServiceControllerTest.getUserTask" />
+        <item itemvalue="JUnit.UserTaskServiceImplTest.getTask" />
         <item itemvalue="JUnit.UserTaskServiceControllerTest" />
       </list>
     </recent_temporary>
@@ -144,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609259459185</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="restructuring">
+      <created>1609367008313</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609367008313</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,7 +185,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding dto package" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding dto package" />
+    <MESSAGE value="restructuring" />
+    <option name="LAST_COMMIT_MESSAGE" value="restructuring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -174,7 +198,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/opal/service/UserTaskServiceImplTest.java</url>
-          <line>28</line>
+          <line>33</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>

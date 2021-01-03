@@ -14,7 +14,7 @@ import java.util.concurrent.*;
 
 @Log4j2
 @Service
-@AllArgsConstructor
+//@AllArgsConstructor
 public class UserTaskServiceImpl implements UserTaskService {
 
     @Autowired
